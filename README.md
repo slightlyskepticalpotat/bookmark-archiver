@@ -11,7 +11,7 @@ To use bookmarkarchiver, you need a bookmark file. You can get one by exporting 
 $ pip3 -r requirements.txt
 $ python3 bookmarkarchiver.py --help
 usage: bookmarkarchiver.py [-h] [--capture_all] [--capture_outlinks] [--capture_screenshot] [--delay_wb_availability] [--force_get]
-                           [--skip_first_archive] [--email_result]
+                           [--skip_first_archive] [--email_result] [--quit_immediately]
                            bookmark_file
 
 Archives your bookmarks with the Wayback Machine.
@@ -32,10 +32,9 @@ optional arguments:
   --skip_first_archive, -f
                         Don't find old captures
   --email_result, -e    Email results to user
+  --quit_immediately, -q
+                        Don't show end results
 ```
 
 ## To-Do
 - publish as a pip package
-- summary of capture status
-- archive to other archivers
-- track down mysterious crashes
