@@ -3,7 +3,7 @@ Python script that archives all of your bookmarks on the Internet Archive. Suppo
 
 bookmarkarchiver uses the official Save Page Now [API](https://docs.google.com/document/d/1Nsv52MvSjbLb2PCpHlat0gkzw0EvtSgpKHu4mk0MnrA). Anonymous users are limited to 4,000 requests per day, which should be enough to save around 200 websites. If you create a free account to the [Internet Archive](https://archive.org/) and log in with Chrome, Chromium, or Firefox, your single-day request limit increases to 100,000 and you should be able to save approximately 5000 websites. Due to API limitations, each bookmark should take around 10 seconds to archive.
 
-As for dependencies, bookmarkarchiver uses Richard Penman's [browsercookie](https://github.com/richardpenman/browsercookie) module with [this patch](https://github.com/richardpenman/browsercookie/pull/8/commits/badb6e122d8ff24b3494babf74e1a4dad1538f8e) applied. It also uses the Python [requests](https://docs.python-requests.org/en/latest/) library.
+As for dependencies, bookmarkarchiver uses Richard Penman's [browsercookie](https://github.com/richardpenman/browsercookie) module. It also uses the Python [requests](https://docs.python-requests.org/en/latest/) library.
 
 ## Usage
 To use bookmarkarchiver, you need a bookmark file. You can get one by exporting them from a browser—instructions are online.

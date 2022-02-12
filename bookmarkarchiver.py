@@ -6,12 +6,13 @@ import secrets
 import time
 
 import requests
+import simplejson
 
 import browsercookie
 
 
 JSON_HEADER = {"Accept":  "application/json"}
-KNOWN_ERRORS = (KeyError, requests.exceptions.ConnectionError)
+KNOWN_ERRORS = (KeyError, requests.exceptions.ConnectionError, simplejson.errors.JSONDecodeError)
 START_TIME = time.time()
 
 
@@ -95,5 +96,5 @@ if len(job_ids) - job_ids.count("success"):
     print(f"Information: {len(job_ids) - job_ids.count('success')} failed; check logs")
     for i, job_id in enumerate(job_ids):
         if job_id != "success":
-            print(f"Information: {bookmarks[i]['name']} failed")
+            print(f"Information: {bookmarks[i]['name']} failed, status {job_id}")
 print(f"Information: finished in {time.time() - START_TIME} seconds")
