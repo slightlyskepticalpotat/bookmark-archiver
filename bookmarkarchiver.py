@@ -8,7 +8,7 @@ import time
 import requests
 import simplejson
 
-import browsercookie
+import browser_cookie3
 
 
 JSON_HEADER = {"Accept":  "application/json"}
@@ -57,7 +57,7 @@ bookmarks = [{"name": bookmark_names[i], "url": bookmark_urls[i]} for i in range
 print(f"Setting Up: {len(bookmarks)} browser bookmarks queued")
 
 # load cookies from chrome or firefox
-cookies = browsercookie.load()
+cookies = browser_cookie3.load()
 print("Setting Up: chrome/firefox cookies loaded")
 
 # try to save every bookmark
