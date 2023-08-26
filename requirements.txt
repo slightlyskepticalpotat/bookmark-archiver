@@ -1,4 +1,2 @@
 browser-cookie3
-pycryptodome
 requests
-simplejson
